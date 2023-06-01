@@ -1,0 +1,166 @@
+
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="css/all.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Weather</title>
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg  align-content-center py-4 ">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-center" href="#">
+                <img src="img/logo.png" alt="" width="64" height="38">
+                <div class="logo-text d-inline-block ms-3">
+                    <h1>Weather</h1>
+                    <small>tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars "></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-lg-start text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active  " aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <header class="">
+        <div class="container ">
+            <div class="search-location position-relative " id="search">
+                <input type="text" class="w-100 rounded-pill inputZeft" 
+                placeholder="Find your location..."
+                  id="search" oninput="search(this.value)" 
+               >
+                <!-- <button type="button" value="" id="submit">Find</button> -->
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="weather  ">
+        <div class="container ">
+            <div class="all  ">
+                <div class="row g-0">
+                    <div class="col-lg-4 ">
+                        <div class="weather-card">
+                            <div class="weather-hd d-flex justify-content-between ">
+                                <span class="current-day"></span>
+                                <span class="current-month"></span>
+                            </div>
+                            <div class="weather-card-body ">
+                                <div class="location" id="location">
+
+                                </div>
+                                <div class="degree d-flex align-items-center ">
+                                    <div class="deg-num">
+                                        <p>
+                                        </p>
+                                    </div>
+                                    <div class="deg-icon">
+                                    </div>
+                                </div>
+                                <div class="weather-status ">
+
+                                </div>
+                                <div class="weather-more-details">
+                                    <span class="me-4">
+                                        <img src="img/icon-umberella.png" alt="" class="me-1">
+                                        <span class="rain-change">
+
+                                        </span>
+                                    </span>
+                                    <span class="me-4">
+                                        <img src="img/icon-wind.png" alt="" class="me-1">
+                                    <span class="wind "></span>
+                                    </span>
+                                    <span class="me-4">
+                                        <img src="img/icon-compass.png" alt="" class="me-1">
+                                        <span class="wind-dir">
+                                            
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 ">
+                        <div class="row g-0 " id="otherDay">
+
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="py-5">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-7">
+                    <form class="position-relative newInput">
+                        <input type="text" class="w-100 rounded-pill" placeholder="Find your location..." id="search">
+                        <button type="button" value="" id="submit">Subscribe</button>
+                    </form>
+                    <div class="copyright mt-4">
+                        <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 ">
+                    <div class="icon d-flex pb-4 justify-content-start justify-content-lg-center ">
+                        <div class="icon-box d-flex justify-content-center align-items-center">
+                            <a href=""> <i class=" fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="icon-box d-flex justify-content-center align-items-center">
+                            <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="icon-box d-flex justify-content-center align-items-center">
+                            <a href=""> <i class="fa-brands fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="icon-box d-flex justify-content-center align-items-center">
+                            <a href=""> <i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/main.js" defer></script>
+</body>
+
+</html>
